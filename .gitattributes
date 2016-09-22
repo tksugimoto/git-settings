@@ -1,0 +1,23 @@
+*.scala diff=java
+*.c diff=cpp
+*.h diff=cpp
+*.cpp diff=cpp
+*.hpp diff=cpp
+*.m diff=objc
+*.java diff=java
+*.html diff=html
+*.pl diff=perl
+*.pm diff=perl
+*.t diff=perl
+*.php diff=php
+*.py diff=python
+*.rb diff=ruby
+
+*.js diff=java
+*.tf diff=java
+*.exs diff=java
+
+messages.* diff=message
+*.conf diff=java
+*.json diff=java
+*.gitignore diff=java

@@ -1,0 +1,89 @@
+[include]
+	path = .gitconfig.local
+
+[credential]
+	helper = cache
+	
+[gui]
+	encoding = utf-8
+	
+[core]
+	quotepath = false
+	autocrlf = input
+	attributesfile = ~/.gitattributes
+	
+[alias]
+	# --branch (-b): ブランチ情報も表示
+	# --short (-s): 圧縮
+	# --untracked-files=all (-u): un trackファイルをどうするか？ all: すべて表示（デフォルト）
+	# 短縮:  status -bsu
+	st    = status --branch --short --untracked-files=all
+	# --ignored: 除外ファイルを表示
+	si    = status --branch --short --untracked-files=all --ignored
+	# add all
+	aa = !git add .  && git add --update && git st
+	
+	# show（Merge commit対応）
+	sw  = "!f() { git show $1 --stat; git diff $1^..$1; }; f"
+
+	# --verbose(-v): 編集画面にdiffを表示
+	cm    = commit --verbose
+	# 前のコミットに追加してコメントもそのまま
+	cma   = commit --amend --no-edit
+	cho   = checkout
+	# --verbose --verbose (-vv): 対応するremoteブランチ（upstream）を表示
+	b     = branch --verbose --verbose
+	ba    = branch --verbose --verbose --all
+
+	re    = remote --verbose
+	
+	mgnff = merge --no-ff
+	cp = cherry-pick
+	
+	fe    = fetch
+	ps    = push
+	pl    = pull
+	
+	ss    = stash
+	sp    = stash pop
+	sl    = stash list
+
+	# --ignore-all-space (-w): 空白を無視
+	# --color-words: 単語単位で比較
+	di    = diff --ignore-all-space --color-words
+	df    = diff --ignore-all-space --color-words
+	dc    = diff --ignore-all-space --color-words --cached
+	dic   = diff --ignore-all-space --color-words --cached
+	# diff last
+	dl    = diff --ignore-all-space --color-words HEAD^
+
+	# histogram: ?
+	dh    = diff --ignore-all-space --color-words --histogram
+	
+	graph = log --graph --decorate=full
+	g     = log --graph --date=short --format=\"%C(yellow)%h%C(reset) %C(magenta)[%ad]%C(reset)%C(auto)%d%C(reset) %s %C(cyan)@%an%C(reset)\"
+	# git log original + merge commit
+	gf   = !"git g --first-parent"
+	# git log original only
+	go   = !"git g --first-parent --no-merges"
+	
+[push]
+	default = simple
+	
+[pull]
+	ff = only
+
+[color "branch"]
+	# git branch -vvした時のupstreamの色を見づらい青からシアンに変更
+	upstream = cyan
+	
+[diff]
+	renames = true
+	compactionHeuristic = true
+
+[diff "scala"]
+	xfuncname = "^\\s*(.*(def|object|class|trait) .*)$"
+
+[diff "message"]
+	wordRegex = "[^ =]+"
+

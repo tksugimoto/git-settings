@@ -1,0 +1,5 @@
+*
+!.gitignore
+!.gitconfig
+!.gitconfig.local.sample
+!.gitattributes
