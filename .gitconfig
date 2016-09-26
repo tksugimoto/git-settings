@@ -17,55 +17,58 @@
 	# --short (-s): 圧縮
 	# --untracked-files=all (-u): un trackファイルをどうするか？ all: すべて表示（デフォルト）
 	# 短縮:  status -bsu
-	st    = status --branch --short --untracked-files=all
+	st		= status --branch --short --untracked-files=all
 	# --ignored: 除外ファイルを表示
-	si    = status --branch --short --untracked-files=all --ignored
+	si		= status --branch --short --untracked-files=all --ignored
+
 	# add all
-	aa = !git add .  && git add --update && git st
-	
+	aa		= !git add .  && git add --update && git st
+
 	# show（Merge commit対応）
-	sw  = "!f() { git show $1 --stat; git diff $1^..$1; }; f"
+	sw		= "!f() { git show $1 --stat; git diff $1^..$1; }; f"
 
 	# --verbose(-v): 編集画面にdiffを表示
-	cm    = commit --verbose
+	cm		= commit --verbose
 	# 前のコミットに追加してコメントもそのまま
-	cma   = commit --amend --no-edit
-	cho   = checkout
-	# --verbose --verbose (-vv): 対応するremoteブランチ（upstream）を表示
-	b     = branch --verbose --verbose
-	ba    = branch --verbose --verbose --all
+	cma		= commit --amend --no-edit
 
-	re    = remote --verbose
+	cho		= checkout
+
+	# --verbose --verbose (-vv): 対応するremoteブランチ（upstream）を表示
+	b		= branch --verbose --verbose
+	ba		= branch --verbose --verbose --all
+
+	re		= remote --verbose
 	
-	mgnff = merge --no-ff
-	cp = cherry-pick
+	mgnff	= merge --no-ff
+	cp		= cherry-pick
 	
-	fe    = fetch
-	ps    = push
-	pl    = pull
+	fe		= fetch
+	ps		= push
+	pl		= pull
 	
-	ss    = stash
-	sp    = stash pop
-	sl    = stash list
+	ss		= stash
+	sp		= stash pop
+	sl		= stash list
 
 	# --ignore-all-space (-w): 空白を無視
 	# --color-words: 単語単位で比較
-	di    = diff --ignore-all-space --color-words
-	df    = diff --ignore-all-space --color-words
-	dc    = diff --ignore-all-space --color-words --cached
-	dic   = diff --ignore-all-space --color-words --cached
+	di		= diff --ignore-all-space --color-words
+	df		= diff --ignore-all-space --color-words
+	dc		= diff --ignore-all-space --color-words --cached
+	dic		= diff --ignore-all-space --color-words --cached
 	# diff last
-	dl    = diff --ignore-all-space --color-words HEAD^
+	dl		= diff --ignore-all-space --color-words HEAD^
 
 	# histogram: ?
-	dh    = diff --ignore-all-space --color-words --histogram
+	dh		= diff --ignore-all-space --color-words --histogram
 	
-	graph = log --graph --decorate=full
-	g     = log --graph --date=short --format=\"%C(yellow)%h%C(reset) %C(magenta)[%ad]%C(reset)%C(auto)%d%C(reset) %s %C(cyan)@%an%C(reset)\"
+	graph	= log --graph --decorate=full
+	g		= log --graph --date=short --format=\"%C(yellow)%h%C(reset) %C(magenta)[%ad]%C(reset)%C(auto)%d%C(reset) %s %C(cyan)@%an%C(reset)\"
 	# git log original + merge commit
-	gf   = !"git g --first-parent"
+	gf		= !"git g --first-parent"
 	# git log original only
-	go   = !"git g --first-parent --no-merges"
+	go		= !"git g --first-parent --no-merges"
 	
 [push]
 	default = simple
