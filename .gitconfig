@@ -43,6 +43,8 @@
 	mgnff	= merge --no-ff
 	cp		= cherry-pick
 	
+	cl		= clone
+
 	fe		= fetch
 	ps		= push
 	pl		= pull
