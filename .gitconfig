@@ -90,5 +90,5 @@
 	xfuncname = "^\\s*(.*(def|object|class|trait) .*)$"
 
 [diff "message"]
-	wordRegex = "[^ =]+"
+	wordRegex = "[^, =]+"
 
