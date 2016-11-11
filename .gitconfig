@@ -92,3 +92,8 @@
 [diff "message"]
 	wordRegex = "[^, =]+"
 
+# 日本語文章をdiffする時など用（※少し重くなる）
+#[pager]
+#	log = diff-highlight | less
+#	show = diff-highlight | less
+#	diff = diff-highlight | less
