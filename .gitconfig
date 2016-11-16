@@ -74,7 +74,7 @@
 
 	# tag-with-message
 	# -n<num>: <num>行までコメントを表示する
-	twm		= tag -n9
+	twm		= tag --list -n9
 	
 [push]
 	default = simple
