@@ -71,6 +71,10 @@
 	gf		= !"git g --first-parent"
 	# git log original only
 	go		= !"git g --first-parent --no-merges"
+
+	# tag-with-message
+	# -n<num>: <num>行までコメントを表示する
+	twm		= tag -n9
 	
 [push]
 	default = simple
