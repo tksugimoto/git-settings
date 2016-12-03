@@ -11,6 +11,7 @@
 	quotepath = false
 	autocrlf = input
 	attributesfile = ~/.gitattributes
+	excludesfile = ~/.gitignore_global
 	
 [alias]
 	# ls-files: gitで管理中のファイル一覧を表示する
