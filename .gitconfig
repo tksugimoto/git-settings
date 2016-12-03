@@ -13,6 +13,10 @@
 	attributesfile = ~/.gitattributes
 	
 [alias]
+	# ls-files: gitで管理中のファイル一覧を表示する
+	ls		= ls-files
+	ll		= ls-files
+
 	# --branch (-b): ブランチ情報も表示
 	# --short (-s): 圧縮
 	# --untracked-files=all (-u): un trackファイルをどうするか？ all: すべて表示（デフォルト）
