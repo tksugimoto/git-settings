@@ -80,6 +80,9 @@
 	# tag-with-message
 	# -n<num>: <num>行までコメントを表示する
 	twm		= tag --list -n9
+
+	# worktree
+	wl		= worktree list
 	
 [push]
 	default = simple
