@@ -13,7 +13,7 @@
 	attributesfile = ~/.gitattributes
 	excludesfile = ~/.gitignore_global
 	# --no-init: lessを終了しても表示し続ける
-	pager = less --no-init --quit-if-one-screen
+	pager = less --no-init --quit-if-one-screen --raw-control-chars
 	
 [alias]
 	# ls-files: gitで管理中のファイル一覧を表示する
