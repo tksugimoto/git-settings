@@ -14,7 +14,7 @@
 *.rb diff=ruby
 
 *.js diff=java
-*.tf diff=java
+*.tf diff=terraform
 *.exs diff=java
 
 messages.* diff=message

@@ -103,6 +103,9 @@
 [diff "scala"]
 	xfuncname = "^\\s*(.*(def|object|class|trait) .*)$"
 
+[diff "terraform"]
+	wordRegex = "[^\"(){}]+"
+
 [diff "message"]
 	wordRegex = "[^, =]+"
 
