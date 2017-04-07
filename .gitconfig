@@ -82,6 +82,8 @@
 	gf		= !"git g --first-parent"
 	# git log original only
 	go		= !"git g --first-parent --no-merges"
+	# master branchとの差
+	gm		= !"git g master.."
 
 	# tag-with-message
 	# -n<num>: <num>行までコメントを表示する
