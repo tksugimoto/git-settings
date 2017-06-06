@@ -86,6 +86,8 @@
 	go		= !"git g --first-parent --no-merges"
 	# master branchとの差
 	gm		= !"git g master.."
+	# 最新9件 (gl: log latest)
+	gl		= !"git g -9"
 
 	# tag-with-message
 	# -n<num>: <num>行までコメントを表示する
