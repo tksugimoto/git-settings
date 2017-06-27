@@ -113,6 +113,9 @@
 [diff "scala"]
 	xfuncname = "^\\s*(.*(def|object|class|trait) .*)$"
 
+[diff "markdown"]
+	xfuncname = "^#+.*$"
+
 [diff "message"]
 	wordRegex = "[^, =]+"
 

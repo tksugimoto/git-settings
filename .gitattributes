@@ -17,6 +17,8 @@
 *.tf diff=cpp
 *.exs diff=java
 
+*.md diff=markdown
+
 messages.* diff=message
 *.conf diff=java
 *.json diff=java
