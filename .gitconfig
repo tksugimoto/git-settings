@@ -56,7 +56,7 @@
 	ps		= push
 	pl		= pull
 	
-	ss		= stash
+	ss		= stash save
 	sp		= stash pop
 	sl		= stash list
 
