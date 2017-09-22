@@ -75,6 +75,7 @@
 	diw		= diff --ignore-all-space --color-words --word-diff-regex=.
 	dicw	= diff --ignore-all-space --color-words --word-diff-regex=. --cached
 	dlw		= diff --ignore-all-space --color-words --word-diff-regex=. HEAD^
+	dlhw	= diff --ignore-all-space --color-words --word-diff-regex=. HEAD^ HEAD
 
 	# histogram: ?
 	dh		= diff --ignore-all-space --color-words --histogram
