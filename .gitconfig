@@ -68,6 +68,7 @@
 	dic		= diff --ignore-all-space --color-words --cached
 	# diff last
 	dl		= diff --ignore-all-space --color-words HEAD^
+	dlh		= diff --ignore-all-space --color-words HEAD^ HEAD
 	dlno	= diff --name-only HEAD^
 	# 文字単位で差分表示 (diff word-diff-regexp)
 	diw		= diff --ignore-all-space --color-words --word-diff-regex=.
