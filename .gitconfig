@@ -131,3 +131,5 @@
 
 [tag]
 	sort = version:refname
+[commit]
+	template = ~/.gitmessage.txt
