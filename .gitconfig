@@ -74,10 +74,10 @@
 	dlno	= diff --name-only HEAD^
 	dlhno	= diff --name-only HEAD^ HEAD
 	# 文字単位で差分表示 (diff word-diff-regexp)
-	diw		= diff --ignore-all-space --color-words --word-diff-regex=.
-	dicw	= diff --ignore-all-space --color-words --word-diff-regex=. --cached
-	dlw		= diff --ignore-all-space --color-words --word-diff-regex=. HEAD^
-	dlhw	= diff --ignore-all-space --color-words --word-diff-regex=. HEAD^ HEAD
+	diw		= diff --ignore-all-space --color-words --word-diff-regex=[^-¿][-¿]*
+	dicw	= diff --ignore-all-space --color-words --word-diff-regex=[^-¿][-¿]* --cached
+	dlw		= diff --ignore-all-space --color-words --word-diff-regex=[^-¿][-¿]* HEAD^
+	dlhw	= diff --ignore-all-space --color-words --word-diff-regex=[^-¿][-¿]* HEAD^ HEAD
 
 	# histogram: ?
 	dh		= diff --ignore-all-space --color-words --histogram
