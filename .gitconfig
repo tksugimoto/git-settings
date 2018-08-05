@@ -48,6 +48,8 @@
 	re		= remote --verbose
 	
 	mgnff	= merge --no-ff --no-edit
+	ma		= merge --abort
+	mc		= merge --continue
 	cp		= cherry-pick
 	
 	cl		= clone
