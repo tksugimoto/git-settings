@@ -83,7 +83,7 @@
 	dh		= diff --ignore-all-space --color-words --histogram
 	
 	graph	= log --graph --decorate=full
-	g		= log --graph --date=short --format=\"%C(yellow)%h%C(reset) %C(magenta)[%ad]%C(reset)%C(auto)%d%C(reset) %s %C(cyan)@%an%C(reset)\"
+	g		= log --graph --date=format:'%Y/%m/%d(%a) %H:%M' --format=\"%C(yellow)%h%C(reset) %C(magenta)[%ad]%C(reset)%C(auto)%d%C(reset) %s %C(cyan)@%an%C(reset)\"
 	# git log all branch
 	ga		= !"git g --all"
 	# git log original + merge commit
