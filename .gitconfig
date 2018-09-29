@@ -50,6 +50,9 @@
 	mgnff	= merge --no-ff --no-edit
 	ma		= merge --abort
 	mc		= merge --continue
+
+	reai	= rebase --autosquash -i
+
 	cp		= cherry-pick
 	
 	cl		= clone
