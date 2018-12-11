@@ -52,6 +52,8 @@
 	mc		= merge --continue
 
 	reai	= rebase --autosquash -i
+	ra		= rebase --abort
+	rc		= rebase --continue
 
 	cp		= cherry-pick
 	
