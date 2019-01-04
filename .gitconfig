@@ -38,6 +38,8 @@
 	cm		= commit --verbose
 	# 前のコミットに追加してコメントもそのまま
 	cma		= commit --amend --no-edit
+	# 前のコミットに追加してコメントもそのまま & commit時刻を現在に変更
+	cmad	= !git cma --date=\"`date -R`\"
 
 	cho		= checkout
 
