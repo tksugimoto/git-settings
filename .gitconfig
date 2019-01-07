@@ -151,6 +151,9 @@
 #	show = diff-highlight | less
 #	diff = diff-highlight | less
 
+[init]
+	templatedir = ~/.git-templates/git-secrets
+
 [tag]
 	sort = version:refname
 [commit]
