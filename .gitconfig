@@ -64,6 +64,7 @@
 	fe		= fetch
 	ps		= push
 	pl		= pull
+	plp		= pull --prune
 	
 	ss		= stash save
 	sp		= stash pop
