@@ -56,6 +56,7 @@
 	reai	= rebase --autosquash -i
 	ra		= rebase --abort
 	rc		= rebase --continue
+	rs		= rebase --skip
 
 	cp		= cherry-pick
 	
