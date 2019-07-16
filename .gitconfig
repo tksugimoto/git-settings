@@ -78,6 +78,8 @@
 	df		= diff --ignore-all-space --color-words
 	dc		= diff --ignore-all-space --color-words --cached
 	dic		= diff --ignore-all-space --color-words --cached
+
+	dino	= diff --name-only
 	# diff last
 	dl		= diff --ignore-all-space --color-words HEAD^
 	dlh		= diff --ignore-all-space --color-words HEAD^ HEAD
