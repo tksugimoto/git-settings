@@ -30,6 +30,7 @@
 
 	# add all
 	aa		= !git add .  && git add --update && git st
+	au		= !git add --update && git st
 
 	# show（Merge commit対応）
 	sw		= "!f() { git show $1 --stat; git diff $1^..$1; }; f"
