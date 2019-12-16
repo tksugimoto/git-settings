@@ -108,6 +108,10 @@
 	# 最新9件 (gl: log latest)
 	gl		= !"git g -9"
 
+	# reset
+	rt		= reset
+	rr		= restore
+
 	# tag-with-message
 	# -n<num>: <num>行までコメントを表示する
 	twm		= tag --list -n9
