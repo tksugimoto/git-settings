@@ -1,3 +1,6 @@
+/.gitmessage.txt        text eol=lf
+
+
 *.scala diff=java
 *.c diff=cpp
 *.h diff=cpp
