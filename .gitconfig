@@ -3,10 +3,10 @@
 
 [credential]
 	helper = cache
-	
+
 [gui]
 	encoding = utf-8
-	
+
 [core]
 	quotepath = false
 	autocrlf = input
@@ -14,7 +14,7 @@
 	excludesfile = ~/.gitignore_global
 	# --no-init: lessを終了しても表示し続ける
 	pager = less --no-init --quit-if-one-screen --raw-control-chars  --tabs=4
-	
+
 [alias]
 	# ls-files: gitで管理中のファイル一覧を表示する
 	ls		= ls-files
@@ -49,7 +49,7 @@
 	ba		= branch --verbose --verbose --all
 
 	re		= remote --verbose
-	
+
 	mgnff	= merge --no-ff --no-edit
 	ma		= merge --abort
 	mc		= merge --continue
@@ -60,7 +60,7 @@
 	rs		= rebase --skip
 
 	cp		= cherry-pick
-	
+
 	cl		= clone
 
 	fe		= fetch
@@ -68,7 +68,7 @@
 	pl		= pull
 	plp		= pull --prune
 	plr		= pull --rebase
-	
+
 	ss		= stash save
 	sp		= stash pop
 	sl		= stash list
@@ -94,7 +94,7 @@
 
 	# histogram: ?
 	dh		= diff --ignore-all-space --color-words --histogram
-	
+
 	graph	= log --graph --decorate=full
 	g		= log --graph --date=format-local:'%Y/%m/%d(%a) %H:%M' --format=\"%C(yellow)%h%C(reset) %C(magenta)[%ad] [%cd]%C(reset)%C(auto)%d%C(reset) %s %C(cyan)@%an%C(reset)\"
 	# git log all branch
@@ -118,17 +118,17 @@
 
 	# worktree
 	wl		= worktree list
-	
+
 [push]
 	default = simple
-	
+
 [pull]
 	ff = only
 
 [color "branch"]
 	# git branch -vvした時のupstreamの色を見づらい青からシアンに変更
 	upstream = cyan
-	
+
 [diff]
 	renames = true
 	compactionHeuristic = true
