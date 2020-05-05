@@ -5,3 +5,4 @@
 !.gitconfig.local.sample
 !.gitattributes
 !.gitmessage.txt
+!.git-checkout-completion.bash
