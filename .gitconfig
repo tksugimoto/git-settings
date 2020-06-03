@@ -47,6 +47,8 @@
 	# --verbose --verbose (-vv): 対応するremoteブランチ（upstream）を表示
 	b		= branch --verbose --verbose
 	ba		= branch --verbose --verbose --all
+	bc		= ! git branch --verbose --sort=committerdate | tail
+	bb		= bc
 
 	re		= remote --verbose
 
