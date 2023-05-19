@@ -141,6 +141,9 @@
 [diff "scala"]
 	xfuncname = "^\\s*(.*(def|object|class|trait) .*)$"
 
+[diff "json"]
+	xfuncname = ".*: *[{]"
+
 [diff "markdown"]
 	xfuncname = "^#+.*$"
 

@@ -24,5 +24,5 @@
 
 messages.* diff=message
 *.conf diff=java
-*.json diff=java
+*.json diff=json
 *.gitignore diff=java
