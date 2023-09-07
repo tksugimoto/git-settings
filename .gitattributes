@@ -19,6 +19,8 @@
 *.js diff=java
 *.tf diff=cpp
 *.exs diff=java
+*.tsx        diff=tsx
+*.tsx.snap   diff=tsx
 
 *.md diff=markdown
 

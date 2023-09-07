@@ -138,6 +138,9 @@
 	renames = true
 	compactionHeuristic = true
 
+[diff "tsx"]
+	xfuncname = "^\\s*((<|(const|let|function|type) |export)[^\\n]*)$"
+
 [diff "scala"]
 	xfuncname = "^\\s*(.*(def|object|class|trait) .*)$"
 
