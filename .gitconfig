@@ -60,6 +60,7 @@
 	ra		= rebase --abort
 	rc		= rebase --continue
 	rs		= rebase --skip
+	reiw 	= rebase --ignore-whitespace
 
 	cp		= cherry-pick
 
