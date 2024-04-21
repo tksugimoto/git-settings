@@ -68,7 +68,7 @@
 
 	fe		= fetch
 	ps		= push
-	psf		= push --force-with-lease
+	psf		= push --force-with-lease --force-if-includes
 	pl		= pull
 	plp		= pull --prune
 	plr		= pull --rebase
