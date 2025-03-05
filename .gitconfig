@@ -139,6 +139,7 @@
 [diff]
 	renames = true
 	compactionHeuristic = true
+	colorMoved = true
 
 [diff "scala"]
 	xfuncname = "^\\s*(.*(def|object|class|trait) .*)$"
