@@ -140,6 +140,7 @@
 	renames = true
 	compactionHeuristic = true
 	colorMoved = true
+	algorithm = histogram
 
 [diff "scala"]
 	xfuncname = "^\\s*(.*(def|object|class|trait) .*)$"
