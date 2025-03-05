@@ -167,3 +167,5 @@
 	enabled = true
 [branch]
 	sort = -committerdate
+[merge]
+	conflictstyle = zdiff3
