@@ -109,6 +109,8 @@
 	gf		= !"git g --first-parent"
 	# git log original only
 	go		= !"git g --first-parent --no-merges"
+	# git log name-only
+	gno		= !"git g --name-only"
 	# master branchとの差
 	gm		= !"git g master.."
 	# 最新30件 (gl: log latest)
